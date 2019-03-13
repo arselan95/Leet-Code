@@ -39,7 +39,7 @@ public class Array_3Sum {
 		// the start pointer is going to be the second to last and our end pointer is
 		// going to be the last
 
-		for (int i = 0; i < nums.length - 3; i++) {
+		for (int i = 0; i <= nums.length - 3; i++) {
 			// we are trying to be cautious of duplicates
 			if (i == 0 || nums[i] > nums[i - 1]) {
 				int start = i + 1;
