@@ -46,6 +46,9 @@ public class IntersectionOfTwoLinkedList {
 		while (a != b) {
 			// for the end of first iteration, we just reset the pointer to the head of
 			// another linkedlist
+			
+			//variable x = (expression) ? value if true : value if false
+			// b = (a == 1) ? 20: 30;
 			a = a == null ? headB : a.next;
 			b = b == null ? headA : b.next;
 		}
