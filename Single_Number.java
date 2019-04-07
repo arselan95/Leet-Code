@@ -17,12 +17,29 @@ xor
     */
     public int singleNumber(int[] nums) {
         
+        /*
+        
         int result= nums[0];
         for(int i=1;i<nums.length;i++)
         {
-            //returns true only if number of true inputs is odd
             result=result ^ nums[i];
         }
         return result;
+    }
+    */
+        
+        HashSet<Integer> set= new HashSet<Integer>();
+        
+        for(int i=0;i<nums.length;i++)
+        {
+            if(set.contains(nums[i]))
+            {
+                set.remove(nums[i]);
+            }
+            else{
+            set.add(nums[i]);
+            }
+        }
+        return set.iterator().next();
     }
 }
