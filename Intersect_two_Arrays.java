@@ -55,6 +55,10 @@ class Solution {
          List<Integer> list = new ArrayList<>();
     Map<Integer,Integer> map = new HashMap<>();
     for(int num : nums1) 
+        /*
+        	getOrDefault(Object key, V defaultValue)
+Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.
+        */
         map.put(num,map.getOrDefault(num,0) + 1);
     
         for(int num : nums2){
