@@ -18,7 +18,7 @@ Output: "ball"
 public class String_MostCommonWord {
 	public String mostCommonWord(String paragraph, String[] banned) {
 
-		// split paragraph
+		// split paragraph by word
 		String[] words = paragraph.toLowerCase().split("\\W+");
 
 		// add banned words to a set
