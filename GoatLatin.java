@@ -51,3 +51,67 @@ public class GoatLatin {
 	}
 
 }
+
+// older viesion 
+
+/*
+
+class Solution {
+    public String toGoatLatin(String S) {
+        
+        
+        //from string to array of string
+        String[] sentence =  S.split("\\s+");
+        
+       //list for vowels
+        ArrayList<Character> vowels = new ArrayList <Character>();
+        
+        vowels.add('A');
+        vowels.add('E');
+        vowels.add('I');
+        vowels.add('O');
+        vowels.add('U');
+        vowels.add('a');
+        vowels.add('e');
+        vowels.add('i');
+        vowels.add('o');
+        vowels.add('u');
+        
+        //our algorithm
+        for(int i =0; i<sentence.length;i++)
+        {
+                
+            if(vowels.contains(sentence[i].charAt(0)))
+               {
+                   sentence[i]=sentence[i].concat("ma");
+               }
+               
+               else
+               {
+                   char first = sentence[i].charAt(0); 
+                   sentence[i]= sentence[i].substring(1,sentence[i].length()).concat(first+"ma");
+               }
+        
+            StringBuilder builder = new StringBuilder();
+            for (int j = 0; j <= i; j++) {
+	                builder.append("a");
+	            }
+            String result = builder.toString();
+            sentence[i]=sentence[i].concat(result);
+                
+    }
+        
+        // update and return new translated String
+    
+        StringBuffer sb = new StringBuffer();
+        for(int i = 0; i < sentence.length; i++) 
+        {
+         sb.append(sentence[i]+" ");
+        }
+        String str = sb.toString();
+        
+        return str.substring(0,str.length()-1);
+}
+}
+
+*/
