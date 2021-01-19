@@ -15,6 +15,9 @@ Example:
 Input: s = "abcdddeeeeaabbbcd"
 Output: [[3,5],[6,9],[12,14]]
 Explanation: The large groups are "ddd", "eeee", and "bbb".
+
+
+My Runtime according to Leetcode:  1 ms, faster than 100.00% of Java online submissions for Positions of Large Groups.
 */
 
 class Solution {
